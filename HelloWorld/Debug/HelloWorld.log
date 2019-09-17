@@ -1,0 +1,35 @@
+﻿Build started 9/17/2019 5:54:13 PM.
+     1>Project "c:\Users\sibear\documents\visual studio 2013\Projects\HelloWorld\HelloWorld\HelloWorld.vcxproj" on node 2 (Build target(s)).
+     1>AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_MBCS /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I. /FIcuda_runtime.h /c "c:\Users\sibear\documents\visual studio 2013\Projects\HelloWorld\HelloWorld\kernel.cu" 
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\sibear\AppData\Local\Temp\tmpf90e1b98f5444abb8aed91effe5e938f.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\kernel.cu.obj "c:\Users\sibear\documents\visual studio 2013\Projects\HelloWorld\HelloWorld\kernel.cu"
+         
+         c:\Users\sibear\documents\visual studio 2013\Projects\HelloWorld\HelloWorld>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2013 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\kernel.cu.obj "c:\Users\sibear\documents\visual studio 2013\Projects\HelloWorld\HelloWorld\kernel.cu" 
+         kernel.cu
+     1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2132): warning C4996: 'std::_Copy_impl': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\xutility(2113) : see declaration of 'std::_Copy_impl'
+                 c:/Users/sibear/documents/visual studio 2013/Projects/HelloWorld/HelloWorld/kernel.cu(39) : see reference to function template instantiation '_OutIt std::copy<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>,int*>(_InIt,_InIt,_OutIt)' being compiled
+                 with
+                 [
+                     _OutIt=int *
+         ,            _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<int>>>
+                 ]
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"c:\users\sibear\documents\visual studio 2013\Projects\HelloWorld\Debug\HelloWorld.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\Win32" cudart.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"c:\users\sibear\documents\visual studio 2013\Projects\HelloWorld\Debug\HelloWorld.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"c:\users\sibear\documents\visual studio 2013\Projects\HelloWorld\Debug\HelloWorld.lib" /MACHINE:X86 Debug\kernel.cu.obj
+         HelloWorld.vcxproj -> c:\users\sibear\documents\visual studio 2013\Projects\HelloWorld\Debug\HelloWorld.exe
+       PostBuildEvent:
+         echo copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "c:\users\sibear\documents\visual studio 2013\Projects\HelloWorld\Debug\"
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "c:\users\sibear\documents\visual studio 2013\Projects\HelloWorld\Debug\"
+         :VCEnd
+         copy "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart*.dll" "c:\users\sibear\documents\visual studio 2013\Projects\HelloWorld\Debug\"
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart32_75.dll
+         C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\cudart64_75.dll
+                 2 file(s) copied.
+     1>Done Building Project "c:\Users\sibear\documents\visual studio 2013\Projects\HelloWorld\HelloWorld\HelloWorld.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.30
